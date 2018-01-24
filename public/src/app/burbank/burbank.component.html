@@ -1,0 +1,23 @@
+<div class="border">
+
+
+    <h2>Burbank, CA</h2>
+    <div>
+      <div *ngIf="weather" class="data">
+        <p>Humidity: {{weather.humidity}}</p>
+        <p>Temperature (Average): {{weather.tempAvg}}</p>
+        <p>Temperature (High): {{weather.tempMax}}</p>
+        <p>Temperature (Low): {{weather.tempMin}}</p>
+        <p>Status: {{weather.status}}</p>
+  
+      </div>
+      <div *ngIf="!weather" class="data">
+        <p>Please wait while we gather your data</p>
+      </div>
+      <div class="cityimg">
+        <img src="https://static.pexels.com/photos/305256/pexels-photo-305256.jpeg">
+  
+      </div>
+    </div>
+  
+  </div>
